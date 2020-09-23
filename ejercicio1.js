@@ -115,3 +115,24 @@ function ambitoVariables(num){
     console.log("soyConstante: " + soyConstante);
     console.log("soyDelIf: " + soyDelIf);
 }
+function textoExclamacion(){
+    var texto;
+    texto = prompt("Introduce un texto");
+    console.log("¡ " + texto + " !");
+}
+function numImpares(){
+    var nums = 1;
+    while(nums<=35){
+        if(nums%2!=0){
+            console.log(nums);
+            nums++;
+        } 
+    }
+}
+function numImpares2(){
+    for (let nums2 = 1; nums2 <= 35; nums2++){
+        if(nums2%2 != 0){
+            console.log(nums2);
+        }
+    }
+}
