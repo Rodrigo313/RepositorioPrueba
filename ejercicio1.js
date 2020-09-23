@@ -1,5 +1,6 @@
 alert("¡Hola Mundo 2!");
 function mostrarVariables(){
+    var variable1;
     alert('Variable1: ' + variable1); 
     alert('Variable2: ' + null);
     variable1 = 34;
@@ -31,4 +32,32 @@ function comprobarOperadores(){
     alert(var6>var7);
     var7=!true;
     alert(var7);
+}
+function fecha(){
+    var dia, mes, anio;
+    dia = prompt("Introduce el día");
+    mes = prompt("Introduce el mes");
+    anio = prompt("Introduce el año");
+    alert("Hoy es " + dia + " de " + mes + " de " + anio);
+}
+function numeros(){
+    var num1;
+    var num2;
+    num1 = prompt("introduce el primer número");
+    num2 = prompt("introduce el segundo número");
+    alert("Multiplicación: " + num1*num2);
+    if(num2 != 0){
+        alert("División: " + num1/num2);
+    }else{
+        alert("Error");
+    }
+    alert("Resta: " + num1-num2);
+    alert("Resta cuadrado" + (num1*num1)-(num2*num2));
+    if(num1>0){
+        alert(num1);
+    }else if(num2>0){
+        alert(num2);
+    }else if((num1>0)&&(num2>0)){
+        alert(num1,num2);
+    }
 }
