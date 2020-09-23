@@ -61,3 +61,43 @@ function numeros(){
         alert(num1,num2);
     }
 }
+function estructurasControl(){
+    function meses(){
+        var arrayMeses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        for(let i = 0; i < 12; i++){
+            console.log(arrayMeses[i]);
+        }
+    }
+    function factorial(num){
+        var numFactorial;
+        numFactorial = prompt("Introduce un número");
+        var total = 1;
+        for (i=1;1<=num;i++){
+            total = total * i;
+        }
+        alert("Factorial: " + factorial(numFactorial));
+    }
+
+    function netflix(){
+        var edad;
+        edad = prompt("Introduce tu edad");
+        if(edad < 7){
+            alert("Patrulla Canina");
+        }else if((edad>7)&&(edad<13)){
+            alert("Alexa y Katie");
+        }else if((edad>14)&&(edad<18)){
+            alert("Anne with an E");
+        }else if((edad>19)&&(edad<35)){
+            alert("Stranger Things");
+        }else if(edad>35){
+            alert("Sherlock");
+        }
+    }
+
+    function bucle(){
+        var num;
+        while((num<45)||(num>72)){
+            num = prompt("Introduce un número");
+        }
+    }
+}
