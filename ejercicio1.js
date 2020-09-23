@@ -137,17 +137,15 @@ function numImpares2(){
     }
 }
 function suma(){
-    var num1,num2,suma;
-    num1 = prompt("Introduce un primer número");
-    num2 = prompt("Introduce un segundo número");
-    suma = alert("Suma: " + num1+num2);
-    var num3;
+    var resultado = Number(prompt("Introduce un número: "));
+    var numero2 = 0;
     while(true){
-        num3 = prompt("Introduce otro número");
-        console.log("Segunda suma: " + num3+suma);
-        if(isNan(num1,num2,num3)){
-            throw new Error("Valor no numérico");
+        numero2 = Number(prompt("Introduce otro número: "));
+        if(isNaN(numero2)) {
+            console.log(resultado);
+            throw new Error("El último valor introducido no es numérico");
         }
+        resultado = resultado + numero2;
     }
 }
 function error(){
